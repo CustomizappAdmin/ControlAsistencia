@@ -4,6 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
-    <string name="botontitle">Picale Aqui</string>
+    <string name="botontitle">Entrar</string>
     <string name="title_activity_inicio">Inicio</string>
+    <string  name="switchMain"> Activo</string>
 </resources>
