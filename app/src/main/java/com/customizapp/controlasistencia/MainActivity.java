@@ -1,7 +1,6 @@
 package com.customizapp.controlasistencia;
 
-
-
+import com.customizapp.controlasistencia.Usuario;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,11 +9,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+
+    public Usuario user = new Usuario();
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -23,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+
+
                     mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
@@ -47,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btn = (Button)findViewById(R.id.btnPicale);
+        Switch sw = (Switch) findViewById(R.id.switch1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Inicio.class));
             }
         });
+
+       sw.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Toast.makeText(getApplicationContext(),user.getNombreUsuario(), Toast.LENGTH_LONG);
+               mTextMessage.setText("Entre"+ user.getNombreUsuario());
+           }
+       });
+
 
 
 
