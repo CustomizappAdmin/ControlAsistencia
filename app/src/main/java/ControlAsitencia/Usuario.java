@@ -1,7 +1,6 @@
-package com.customizapp.controlasistencia;
+package ControlAsitencia;
 
 public class Usuario {
-<<<<<<< HEAD
 
     private String id;
 
@@ -167,6 +166,5 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-=======
->>>>>>> origin/master
+
 }

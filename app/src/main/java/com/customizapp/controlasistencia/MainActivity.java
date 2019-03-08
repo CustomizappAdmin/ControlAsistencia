@@ -1,6 +1,5 @@
 package com.customizapp.controlasistencia;
 
-import com.customizapp.controlasistencia.Usuario;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,6 +11,8 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import ControlAsitencia.Usuario;
+
 
 public class MainActivity extends AppCompatActivity {
 
