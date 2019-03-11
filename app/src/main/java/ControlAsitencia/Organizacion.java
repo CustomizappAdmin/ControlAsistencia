@@ -10,13 +10,15 @@ public class Organizacion {
     private String telefono;
     private String color1;
     private String color2;
-    private Usuario idResponsable;
-
+    private Usuario usuario;
+    private int toleranciaMin;
+    private int toleranciaMetros;
     private Date fechaAlta;
     private Date fechaModificacion;
     private boolean Activo;
     private int idEstatus;
     private Usuario idusuario;
+    private Ubicacion ubicacion;
 
 
     public int getIdOrganizacion() {
@@ -115,11 +117,35 @@ public class Organizacion {
         this.idusuario = idusuario;
     }
 
-    public Usuario getIdResponsable() {
-        return idResponsable;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setIdResponsable(Usuario idResponsable) {
-        this.idResponsable = idResponsable;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public int getToleranciaMin() {
+        return toleranciaMin;
+    }
+
+    public void setToleranciaMin(int toleranciaMin) {
+        this.toleranciaMin = toleranciaMin;
+    }
+
+    public int getToleranciaMetros() {
+        return toleranciaMetros;
+    }
+
+    public void setToleranciaMetros(int toleranciaMetros) {
+        this.toleranciaMetros = toleranciaMetros;
+    }
+
+    public Ubicacion getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(Ubicacion ubicacion) {
+        this.ubicacion = ubicacion;
     }
 }

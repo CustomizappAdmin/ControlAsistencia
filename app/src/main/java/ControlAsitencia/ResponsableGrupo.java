@@ -8,6 +8,7 @@ public class ResponsableGrupo {
     private Grupo grupo;
     private  Usuario responsable;
     private Ciclo ciclo;
+
     private Date fechaAlta;
     private Date fechaModificacion;
     private boolean Activo;
@@ -86,3 +87,4 @@ public class ResponsableGrupo {
         this.idusuario = idusuario;
     }
 }
+

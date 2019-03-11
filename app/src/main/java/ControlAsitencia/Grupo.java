@@ -13,6 +13,7 @@ public class Grupo {
     private boolean Activo;
     private int idEstatus;
     private Usuario idusuario;
+    private Ubicacion ubicacion;
 
     public Organizacion getOrganizacion() {
         return organizacion;
@@ -84,5 +85,13 @@ public class Grupo {
 
     public void setIdusuario(Usuario idusuario) {
         this.idusuario = idusuario;
+    }
+
+    public Ubicacion getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(Ubicacion ubicacion) {
+        this.ubicacion = ubicacion;
     }
 }
